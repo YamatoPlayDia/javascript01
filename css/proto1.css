@@ -1,0 +1,8 @@
+body {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+#fortune-list, #start-btn-container, #results {
+    max-width: 400px;
+    margin: 0 auto;
+}

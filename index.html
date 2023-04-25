@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>みこちゃんの占い</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/proto2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/myshuffletext.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg text-white fixed-top">
+            <div class="container">
+                <h1 class="d-flex align-items-center m-0 p-0 header__logo" id="logo">
+                    <a class="navbar-brand" href="../jquery01/index.html">
+                        <img src="img/logo_short-b.png" class="navbar_logo-v me-2" alt="ブイズアカデミー" width="40" height="30">
+                        <img src="img/logo_long-b.webp" class="navbar_logo-vsacademy mx-1" alt="セカイを創るVISIONARYになろう" width="196" height="35">
+                    </a>
+                </h1>
+            </div>
+        </nav>
+    </header>
+    <div id="bg-container"></div>
+    <div class="first-view justify-content-end container d-flex flex-column vh-100 m-0">
+        <h1 class="first-view__catch mb-1 lh-1 fw-bold" id="title">みこちゃんの<br>占い部屋<a id="start-button" class="btn btn-outline-light mx-5 px-3 fs-2">入る→</a></h1>
+        <div class="container" id="fortune-content">
+            <div class="d-flex justify-content-center mt-5">
+                <p class="text-center mt-5 fs-1" id="scene1" style="display: none;">おかえり！みこちゃんのおうちだよ！</p>
+                <p class="text-center mt-5 fs-1" id="scene2" style="display: none;">ねえねえ、占ってあげるからさ！<br>その前に・・・</p>
+                <p class="text-center mt-5 fs-1" id="scene3" style="display: none;">あたいの運命も<br>占ってよ</p>
+                <p class="text-center mt-5 fs-1" id="scene4" style="display: none;">気になる水晶、1個選んで頂戴！</p>
+            </div>
+            <div id="cards" class="d-flex justify-content-center flex-wrap" style="display: none;"></div>
+            <div id="start-btn-container" class="justify-content-center mt-5" style="display: none;">
+                <div id="results" class="mt-5 d-flex justify-content-center row">
+                    <div class="col-6 d-flex justify-content-center row">
+                        <h3 class="mt-5 d-block col-12 fs-4">みこちゃんの占い結果:</h3>
+                        <div id="my-result" class="col-12"></div>
+                    </div>
+                    <div class="col-6 d-flex justify-content-center row">
+                        <h3 class="mt-5 d-block col-12 fs-4">あなたの占い結果:</h3>
+                        <div id="your-result" class="col-12"></div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center row">
+                        <h3 class="mt-5 d-block col-12 fs-4">あなたとみこちゃんの相性:</h3>
+                        <div id="our-result" class="col-12 fs-bold fs-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="fortune-content" class="d-none">
+            <p>占いの前に、みこちゃんの何が気になるか教えて！<br>ランダム予定(おみくじ/じゃんけん課題として)</p>
+            <div id="cards" class="d-flex justify-content-center flex-wrap">
+                <div class="card">
+                    <p>みこちゃんが気になっているサウナ！</p>
+                </div>
+                <div class="card">
+                    <p>みこちゃんが食べたもの！</p>
+                </div>
+                <div class="card">
+                    <p>みこちゃんが気になる新しい趣味！</p>
+                </div>
+                <div class="card">
+                    <p>みこちゃんが気になるAIサービス！</p>
+                </div>
+                <div class="card">
+                    <p>みこちゃんが気になるゲーム！</p>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <script src="js/svg-animation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="js/proto2-2.js"></script>
+</body>
+</html>
